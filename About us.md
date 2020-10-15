@@ -1,4 +1,5 @@
 ![logo](https://github.com/glthrivikram/Multi-Context-based-Knowledge-distilation/blob/main/images/download.png)
+Team Name : 
 |        Name             |             Position          |       Organisation    |        Mail-Id        | 
 |:-----------------------:|:-----------------------------:|:------------------:|:---------------------:|
 |  Thrivikram G L         | Undergraduate Research Intern |   Ericsson research  |  glvikram99@gmail.com | 
