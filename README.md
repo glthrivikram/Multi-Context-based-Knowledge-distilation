@@ -99,9 +99,6 @@ python trainSelector.py
 ```bat
    python inference.py 
 ```
-# Pretrained models
-The pre-trained weights for all the models can be obtained from the following link.
-      [Google Drive](https://drive.google.com/drive/folders/1H7O6QfoPICf9LThpHEYw1IBsWcbip1YO?usp=sharing)
       
 # Results 
 
