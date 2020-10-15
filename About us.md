@@ -1,5 +1,9 @@
 ![logo](https://github.com/glthrivikram/Multi-Context-based-Knowledge-distilation/blob/main/images/download.png)
-Team Name : 
+ERICSSON RESEARCH
+ITU-ML5G-PS-018TU- Compression of Deep Learning Models
+Multi-Context based Knowledge Distillation
+Team :Pentagon 
+
 |        Name             |             Position          |       Organisation    |        Mail-Id        | 
 |:-----------------------:|:-----------------------------:|:------------------:|:---------------------:|
 |  Thrivikram G L         | Undergraduate Research Intern |   Ericsson research  |  glvikram99@gmail.com | 
