@@ -1,5 +1,14 @@
 # Multi Context based-Knowledge-distilation
 
+
+# LINKS 
+
+|         Content     |       LINK       |
+|:-------------------:|:----------------:|
+|Pretrained Model     |    [Google Drive](https://drive.google.com/drive/folders/1H7O6QfoPICf9LThpHEYw1IBsWcbip1YO?usp=sharing)     |
+|Documents            |    [Google Drive](https://drive.google.com/drive/folders/1rK47DP__vzz3HqYB1uxVHN9pJC3yOtlS?usp=sharing)       |
+|Demo Video           |    [Google Drive](https://drive.google.com/drive/folders/1wCH4tuDRxpHFuwR2Jcrrg5Upyi0QmGqB?usp=sharing)       |
+
 Knowledge Distillation(KD) is a general purpose technique that at first glance is widely applicable and complements all other ways of compressing neural networks . The key idea is to use soft probabilities (or ‘logits’) of a larger “teacher network” to supervise a smaller “student” network, in addition to the available class labels. These soft probabilities reveal more information than the class labels alone, and can purportedly help the student network learn better.
 
 <p align="center">
@@ -15,6 +24,14 @@ For distilling the learned knowledge we use Logits (the inputs to the final soft
 
 
 # Proposed architecture
+
+<p align="center">
+<img src="https://github.com/glthrivikram/Multistudent-Knowledge-distilation/blob/main/images/itu1.png" alt="alt text" width="550" height="250">
+</p>
+
+
+
+
 <p align="center">
 <img src="https://github.com/glthrivikram/Multistudent-Knowledge-distilation/blob/main/images/MS.png" alt="alt text" width="550" height="250">
 </p>
@@ -87,13 +104,16 @@ The pre-trained weights for all the models can be obtained from the following li
       [Google Drive](https://drive.google.com/drive/folders/1H7O6QfoPICf9LThpHEYw1IBsWcbip1YO?usp=sharing)
       
 # Results 
-# Model Attributes
+
+__Model Attributes__
 |  Model Attribute |   Teacher  |   Student 1 |  Student 2  | Model Selector|
 |:----------------:|:----------:|:-----------:|:-----------:|:-------------:|
 |      Model       |  ResNet50  | DenseNet121 |  GoogleNet  | CNN(3 Layers) |
 | No.of Parameters |    25.6M   |    3.27M    |    6.07M    |    0.55M      |
 |  Parameter size  |     98MB   |     31MB    |     25MB    |    2.21MB     |
 |   No. of layers  |      50    |     11      |      22     |       3       |
+
+__Accuraccy__
 
 |            Model    |    Accuraccy     |
 |:-------------------:|:----------------:|
