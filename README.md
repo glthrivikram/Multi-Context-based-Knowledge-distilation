@@ -87,6 +87,13 @@ The pre-trained weights for all the models can be obtained from the following li
       [Google Drive](https://drive.google.com/drive/folders/1H7O6QfoPICf9LThpHEYw1IBsWcbip1YO?usp=sharing)
       
 # Results 
+# Model Attributes
+|  Model Attribute |   Teacher  |   Student 1 |  Student 2  | Model Selector|
+|:----------------:|:----------:|:-----------:|:-----------:|:-------------:|
+|      Model       |  ResNet50  | DenseNet121 |  GoogleNet  | CNN(3 Layers) |
+| No.of Parameters |    25.6M   |    3.27M    |    6.07M    |    0.55M      |
+|  Parameter size  |     98MB   |     31MB    |     25MB    |    2.21MB     |
+|   No. of layers  |      50    |     11      |      22     |       3       |
 
 |            Model    |    Accuraccy     |
 |:-------------------:|:----------------:|
