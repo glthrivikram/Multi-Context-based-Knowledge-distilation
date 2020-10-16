@@ -59,7 +59,7 @@ ResNet, short for Residual Networks is a classic neural network used as a backbo
 
  **Training the Teacher**
 ```bat
-python teacherTrain.py 
+python teacherTrain.py --epochs 20
 ```
 # Student Models
 
@@ -75,13 +75,13 @@ python teacherTrain.py
  
 * To train DenseNet using Knowledge Distilation 
 ```bat
-python StudentTrain.py --model 1
+python StudentTrain.py --model 1 --epochs 12
 ```
 or 
 
 * To train GoogleNet using Knowledge Distilation 
 ```bat
-python StudentTrain.py --model 2
+python StudentTrain.py --model 2 --epochs 12
 ```
 
 
