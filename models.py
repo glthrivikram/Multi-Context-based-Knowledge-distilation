@@ -31,7 +31,7 @@ def densenet():
     return model
 
 def googlenet():
-    student2=torch.hub.load('pytorch/vision:v0.6.0','googlenet',pretrained=True)
+    student2=torch.hub.load('pytorch/vision:v0.6.0','googlenet')
     for param in student2.parameters():
        param.requires_grad = False
     student2=nn.Sequential(student2,nn.Linear(1000,10),nn.Softmax())
