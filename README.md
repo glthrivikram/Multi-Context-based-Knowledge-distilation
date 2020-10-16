@@ -9,7 +9,7 @@ Knowledge Distillation(KD) is a general purpose technique that at first glance i
 |:-------------------:|:----------------:|
 |Pretrained Model     |    [Google Drive](https://drive.google.com/drive/folders/1H7O6QfoPICf9LThpHEYw1IBsWcbip1YO?usp=sharing)     |
 |Documents            |    [Google Drive](https://drive.google.com/drive/folders/1rK47DP__vzz3HqYB1uxVHN9pJC3yOtlS?usp=sharing)       |
-|Demo Video           |    [Google Drive](https://drive.google.com/drive/folders/1wCH4tuDRxpHFuwR2Jcrrg5Upyi0QmGqB?usp=sharing)       |
+|Demo Video           |    [Youtube](https://youtu.be/8QzO50TosEM)       |
 
 
 <p align="center">
