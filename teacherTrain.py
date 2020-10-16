@@ -14,6 +14,12 @@ import torchvision.models as models
 from torch import nn, optim
 from collections import  OrderedDict
 import models as mod
+import argparse
+
+parser = argparse.ArgumentParser(description='Process some integers.')
+parser.add_argument("--epochs", help="Number of epochs to run",type = int)
+args = parser.parse_args()
+
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
 criterion = nn.CrossEntropyLoss()
 def train_and_evaluate(model, trainloader, valloader, criterion, len_trainset, len_valset, num_epochs=25):
@@ -85,7 +91,7 @@ def main():
 
     resnet = mod.resnetModel()
     resnet.to(device) 
-    resnet_teacher = train_and_evaluate(resnet,trainloader,valloader,criterion,len_trainset,len_valset,12) 
+    resnet_teacher = train_and_evaluate(resnet,trainloader,valloader,criterion,len_trainset,len_valset,args.epochs) 
     torch.save(resnet_teacher.state_dict(),'teacher.pt')
 
 if __name__ =='__main__':

@@ -19,7 +19,8 @@ import models as mod
 import argparse
 
 parser = argparse.ArgumentParser(description='Process some integers.')
-parser.add_argument("--model", help="increase output verbosity",type = int)
+parser.add_argument("--model", help="1- densenet 2- googlenet",type = int)
+parser.add_argument("--epochs", help="Number of epochs to train",type = int)
 args = parser.parse_args()
 
 '''
@@ -146,12 +147,12 @@ if args.model ==1:
     print("training Densenet Student:")
     model = mod.densenet()
     model.to(device)
-    student = train_and_evaluate_kd(model,resnet,optim.Adam(model.parameters()),loss_kd,trainloader,valloader,7,0.5,10)
+    student = train_and_evaluate_kd(model,resnet,optim.Adam(model.parameters()),loss_kd,trainloader,valloader,7,0.5,args.epochs)
     torch.save(student.load_state_dict(),modelName,_use_new_zipfile_serialization=False)
 
 elif args.model ==2:
     modelName = 'googlenetV2.pth'
     student2 = mod.googlenet()
-    student = train_and_evaluate_kd(student2,resnet,optim.Adam(model.parameters()),loss_kd,trainloader,valloader,7,0.5,10)
+    student = train_and_evaluate_kd(student2,resnet,optim.Adam(model.parameters()),loss_kd,trainloader,valloader,7,0.5,args.epochs)
     torch.save(student.load_state_dict(),modelName,_use_new_zipfile_serialization=False)
 
