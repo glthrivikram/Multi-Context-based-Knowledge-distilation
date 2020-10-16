@@ -117,7 +117,7 @@ __Accuraccy__
 |Teacher ResNet50     |     81%          |
 |Student 1 - DenseNet |    74.19%        |
 |Student 2 - GoogleNet|    73.21%        |
-|Model Selector with Students  | 79.67%  |
+|Model Selector with Students  | 81.79%  |
 
 <p align="center">
 <img src="https://github.com/glthrivikram/Multistudent-Knowledge-distilation/blob/main/images/results1itu.png" alt="alt text" width="750" height="350">
