@@ -13,7 +13,7 @@ Knowledge Distillation(KD) is a general purpose technique that at first glance i
 
 
 <p align="center">
-<img src="https://github.com/glthrivikram/Multistudent-Knowledge-distilation/blob/main/images/Knowledge%20distilation%20structure.png" alt="alt text" >
+<img src="/images/Knowledge%20distilation%20structure.png" alt="alt text" >
 </p>
 
 For distilling the learned knowledge we use Logits (the inputs to the final softmax). Logits can be used for learning the small model and this can be done by minimizing the squared difference between the logits produced by the cumbersome model and the logits produced by the small model.
@@ -46,7 +46,7 @@ The CIFAR-10 dataset consists of 60000 32x32 colour images in 10 classes, with 6
 
 The dataset is divided into five training batches and one test batch, each with 10000 images. There are 50000 training images and 10000 test images. The train set is divided into 782 batches in which each batch consists of 64 images. Here are the classes in the dataset, as well as 10 random images from each:
 
-![Dataset](https://github.com/glthrivikram/Multistudent-Knowledge-distilation/blob/main/images/cifar10.png)
+![Dataset](/images/cifar10.png)
 
 **Installing dependencies**
  ```bat
@@ -56,7 +56,7 @@ The dataset is divided into five training batches and one test batch, each with 
 
 ResNet, short for Residual Networks is a classic neural network used as a backbone for many computer vision tasks.The fundamental breakthrough with ResNet was it allowed us to train extremely deep neural networks with 150+layers successfully. Prior to ResNet training very deep neural networks was difficult due to the problem of vanishing gradients.This problem was addressed using the concept of skip connections.
 
-![resnet50-meta](https://github.com/glthrivikram/Multistudent-Knowledge-distilation/blob/main/images/resnetmeta.png)
+![resnet50-meta](/images/resnetmeta.png)
 
  **Training the Teacher**
 ```bat
@@ -72,7 +72,7 @@ python teacherTrain.py --epochs 20
 
 **Student 2 - GoogleNet**
     The GoogleNet Architecture is 22 layers deep, with 27 pooling layers included. There are 9 inception modules stacked linearly in total. The ends of the inception modules are     connected to the global average pooling layer.
-![googlenet](https://github.com/glthrivikram/Multistudent-Knowledge-distilation/blob/main/images/googlenet.jpg)
+![googlenet](/images/googlenet.jpg)
  
 * To train DenseNet using Knowledge Distilation 
 ```bat
@@ -121,8 +121,8 @@ __Accuraccy__
 |Model Selector with Students  | 81.79%  |
 
 <p align="center">
-<img src="https://github.com/glthrivikram/Multistudent-Knowledge-distilation/blob/main/images/results1itu.png" alt="alt text" width="750" height="350">
-<img src="https://github.com/glthrivikram/Multistudent-Knowledge-distilation/blob/main/images/results2itu.png" alt="alt text" width="550" height="250">
+<img src="/images/results1itu.png" alt="alt text" width="750" height="350">
+<img src="/images/results2itu.png" alt="alt text" width="550" height="250">
 </p>
 
 # Compression with respect to teacher
