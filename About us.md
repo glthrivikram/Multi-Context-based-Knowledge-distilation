@@ -1,6 +1,6 @@
 ![logo](https://github.com/glthrivikram/Multi-Context-based-Knowledge-distilation/blob/main/images/download.png)
 ERICSSON RESEARCH
-ITU-ML5G-PS-018TU- Compression of Deep Learning Models
+# ITU-ML5G-PS-018TU- Compression of Deep Learning Models (Student category)
 Multi-Context based Knowledge Distillation
 Team :Pentagon 
 
